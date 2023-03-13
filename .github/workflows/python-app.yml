@@ -1,8 +1,5 @@
 name: Python application
 
-notifications:
-  slack:
-    webhook: "https://hindespace.slack.com/archives/C04TLR1N9RB"
 on: push
 
 jobs:
@@ -17,6 +14,11 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v1
+      - name: Slack notification
+        uses: hind/action-slack@v3
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.https://hindespace.slack.com/archives/C04TLR1N9RB }}
+      
 
       - name: Install Python ✨
         uses: actions/setup-python@v4.5.0
