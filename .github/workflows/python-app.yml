@@ -5,6 +5,7 @@ on: push
 jobs:
   tests:
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
 
     strategy:
       matrix:
