@@ -1,5 +1,8 @@
 name: Python application
 
+notifications:
+  slack:
+    webhook: "https://hindespace.slack.com/archives/C04TLR1N9RB"
 on: push
 
 jobs:
@@ -28,3 +31,5 @@ jobs:
         run: |
           pip install pytest
           python -m pytest
+      
+    
