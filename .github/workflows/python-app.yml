@@ -5,8 +5,6 @@ on: push
 jobs:
   tests:
     runs-on: ${{ matrix.os }}
-    env:
-     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     timeout-minutes: 10
 
     strategy:
@@ -39,5 +37,6 @@ jobs:
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
           text: 'CICD ongoing...'
           channel: '#projetgithub'
-
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     
