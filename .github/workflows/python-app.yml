@@ -30,7 +30,7 @@ jobs:
           pip install pytest
           python -m pytest
       - name: Slack Notification
-        uses: 8398a7/action-slack@v3
+        uses: actions/action-slack@v3
         with:
           status: ${{ job.status }}
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
