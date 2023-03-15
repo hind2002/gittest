@@ -1,7 +1,10 @@
+"""
+Ce module contient une fonction pour calculer la soustraction de deux nombres.
+"""
+
 def soustraction():
     """
-    Ce programme demande à l'utilisateur de saisir deux 
-    nombres et calcule la soustraction de ces deux nombres.
+    Cette fonction demande à l'utilisateur de saisir deux nombres et calcule la soustraction de ces deux nombres.
     """
     # Demander à l'utilisateur de saisir les deux nombres
     premier_nombre = float(input("Entrez le premier nombre : "))
@@ -19,4 +22,3 @@ def soustraction():
 
 # Appeler la fonction pour exécuter le programme
 soustraction()
-
