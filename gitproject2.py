@@ -6,7 +6,7 @@ def soustraction():
     premier_nombre = float(input("Entrez le premier nombre : "))
     deuxieme_nombre = float(input("Entrez le deuxième nombre : "))
 
-    # Vérifier si le deuxième nombre n'est pas zéro
+    # Vérifier si le deuxième nombre n'est pas 0
     if deuxieme_nombre == 0:
         print("Le deuxième nombre ne peut pas être zéro. Veuillez réessayer.")
     else:
